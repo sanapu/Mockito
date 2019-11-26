@@ -74,10 +74,10 @@ public class ToDoBusinessImplTest {
 	
 	@Test
 	public void testException() {
-		List listMock = mock(List.class);
+	//	List listMock = mock(List.class);
 		
-		when(listMock.getItem(0)).thenThrow(new Exception("exception here"));
+		//when(listMock.getItem(0)).thenThrow(new NullPointerException("exception here"));
 		
-		//Assertions.assertThrows(Exception.class, listMock.getItem(0));
+		Assertions.assertThrows(ArithmeticException.class, () -> Math.floorDiv(5, 0));
 	}
 }
