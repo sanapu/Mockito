@@ -6,6 +6,9 @@ import java.util.stream.Collectors;
 
 import com.demo_mockito.example2.data.api.ToDoService;
 
+
+// this class is called system under test (SUT)
+// ToDoservice is the dependency
 public class ToDoBusinessImpl {
 	
 	
